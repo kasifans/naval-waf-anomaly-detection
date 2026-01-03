@@ -42,4 +42,15 @@ The project is designed as a **working prototype**, prioritizing clarity, perfor
 - **CI/CD:** GitHub Actions
 
 ## 📂 Project Structure
+naval-waf-anomaly-detection/
+│
+├── dashboard/ # Streamlit dashboard
+├── simulator/ # Traffic simulation logic
+├── rules/ # Rule-based detection engine
+├── ml/ # Simulated ML layer (conceptual)
+├── data/ # Sample datasets
+├── Dockerfile
+├── requirements.txt
+├── README.md
+└── .github/workflows # CI/CD pipeline
 
