@@ -1,0 +1,446 @@
+ip,req_per_min,avg_resp_time,error_rate,avg_req_size,unique_endpoints,burst_score,anomaly_score,anomaly,anomaly_label,req_rate_deviation,explanation,risk_score,severity,recommended_action
+10.0.0.1,2,205.5,0.0,613.5,1,0.0769230769230769,0.037870648268667984,1,Normal,1.53,Traffic behavior within normal baseline,0.93,Low,Allow traffic and continue monitoring
+10.0.0.1,1,101.0,0.0,731.0,1,0.0384615384615384,0.0717589834664994,1,Normal,0.77,Traffic behavior within normal baseline,0.46,Low,Allow traffic and continue monitoring
+10.0.0.1,1,230.0,1.0,494.0,1,0.0384615384615384,0.06037133334926281,1,Normal,0.77,Traffic behavior within normal baseline,4.85,Medium,Apply rate limiting and monitor closely
+10.0.0.1,1,118.0,0.0,253.0,1,0.0384615384615384,0.08898267280878147,1,Normal,0.77,Traffic behavior within normal baseline,0.51,Low,Allow traffic and continue monitoring
+10.0.0.1,2,173.5,0.0,388.0,2,0.0769230769230769,0.08728213893057685,1,Normal,1.53,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.1,1,222.0,0.0,716.0,1,0.0384615384615384,0.0845604182573646,1,Normal,0.77,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.1,1,161.0,0.0,792.0,1,0.0384615384615384,0.06460758883147139,1,Normal,0.77,Traffic behavior within normal baseline,0.64,Low,Allow traffic and continue monitoring
+10.0.0.1,3,159.33333333333334,1.0,428.0,2,0.1153846153846153,-0.056464539364587285,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Unusually high error rate observed; Accessing unusually high number of endpoints,4.95,Medium,Apply rate limiting and monitor closely
+10.0.0.1,3,175.33333333333334,0.6666666666666666,628.3333333333334,3,0.1153846153846153,-0.051148811437720765,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Unusually high error rate observed; Accessing unusually high number of endpoints,3.66,Low,Allow traffic and continue monitoring
+10.0.0.10,1,179.0,0.0,268.0,1,0.0384615384615384,0.10804737509953599,1,Normal,0.77,Traffic behavior within normal baseline,0.7,Low,Allow traffic and continue monitoring
+10.0.0.10,3,150.0,0.3333333333333333,532.0,2,0.1153846153846153,0.004727806813092372,1,Normal,2.3,Traffic behavior within normal baseline,2.25,Low,Allow traffic and continue monitoring
+10.0.0.10,2,190.0,0.0,427.0,2,0.0769230769230769,0.09128673896604156,1,Normal,1.53,Traffic behavior within normal baseline,0.88,Low,Allow traffic and continue monitoring
+10.0.0.10,1,244.0,1.0,201.0,1,0.0384615384615384,-0.014657834521730861,-1,Anomaly,0.77,Unusually high error rate observed,4.89,Medium,Apply rate limiting and monitor closely
+10.0.0.10,1,150.0,0.0,487.0,1,0.0384615384615384,0.12096627441815172,1,Normal,0.77,Traffic behavior within normal baseline,0.61,Low,Allow traffic and continue monitoring
+10.0.0.10,3,211.66666666666663,0.0,434.0,3,0.1153846153846153,-0.061649338229495476,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,1.1,Low,Allow traffic and continue monitoring
+10.0.0.10,2,93.0,0.0,264.0,1,0.0769230769230769,-0.02906940808850389,-1,Anomaly,1.53,Multiple feature deviations from learned baseline,0.59,Low,Allow traffic and continue monitoring
+10.0.0.10,2,171.0,0.5,308.0,2,0.0769230769230769,0.048980949075693725,1,Normal,1.53,Traffic behavior within normal baseline,2.83,Low,Allow traffic and continue monitoring
+10.0.0.10,1,104.0,0.0,350.0,1,0.0384615384615384,0.09171310076816752,1,Normal,0.77,Traffic behavior within normal baseline,0.47,Low,Allow traffic and continue monitoring
+10.0.0.10,2,135.5,0.5,460.5,2,0.0769230769230769,0.07658688775672157,1,Normal,1.53,Traffic behavior within normal baseline,2.72,Low,Allow traffic and continue monitoring
+10.0.0.10,1,237.0,0.0,377.0,1,0.0384615384615384,0.09673376386423677,1,Normal,0.77,Traffic behavior within normal baseline,0.87,Low,Allow traffic and continue monitoring
+10.0.0.100,16,537.0625,1.0,1420.0625,3,0.6153846153846154,-0.20620876481166528,-1,Anomaly,12.27,Request rate exceeded baseline by 12.27×; Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads; Accessing unusually high number of endpoints,8.09,High,Block IP and alert SOC immediately
+10.0.0.100,12,658.9166666666666,1.0,1528.75,3,0.4615384615384615,-0.2334124590767389,-1,Anomaly,9.2,Request rate exceeded baseline by 9.2×; Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads; Accessing unusually high number of endpoints,7.85,High,Block IP and alert SOC immediately
+10.0.0.100,15,529.2,1.0,1576.4666666666667,3,0.5769230769230769,-0.2081899458010621,-1,Anomaly,11.5,Request rate exceeded baseline by 11.5×; Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads; Accessing unusually high number of endpoints,7.91,High,Block IP and alert SOC immediately
+10.0.0.100,14,466.7142857142857,1.0,1393.642857142857,3,0.5384615384615384,-0.20719868508649342,-1,Anomaly,10.73,Request rate exceeded baseline by 10.73×; Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads; Accessing unusually high number of endpoints,7.57,High,Block IP and alert SOC immediately
+10.0.0.11,1,154.0,0.0,487.0,1,0.0384615384615384,0.1199707962783555,1,Normal,0.77,Traffic behavior within normal baseline,0.62,Low,Allow traffic and continue monitoring
+10.0.0.11,2,159.0,0.5,323.0,2,0.0769230769230769,0.04628443108436342,1,Normal,1.53,Traffic behavior within normal baseline,2.79,Low,Allow traffic and continue monitoring
+10.0.0.11,2,192.5,0.0,592.0,1,0.0769230769230769,0.0568300570710189,1,Normal,1.53,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.11,1,205.0,1.0,779.0,1,0.0384615384615384,0.051773004285417645,1,Normal,0.77,Traffic behavior within normal baseline,4.78,Medium,Apply rate limiting and monitor closely
+10.0.0.11,1,173.0,0.0,408.0,1,0.0384615384615384,0.11767400833557684,1,Normal,0.77,Traffic behavior within normal baseline,0.68,Low,Allow traffic and continue monitoring
+10.0.0.11,1,84.0,1.0,206.0,1,0.0384615384615384,-0.022574093805193818,-1,Anomaly,0.77,Unusually high error rate observed,4.41,Medium,Apply rate limiting and monitor closely
+10.0.0.12,1,196.0,0.0,711.0,1,0.0384615384615384,0.09651670320447103,1,Normal,0.77,Traffic behavior within normal baseline,0.75,Low,Allow traffic and continue monitoring
+10.0.0.12,1,103.0,1.0,270.0,1,0.0384615384615384,0.013641541986562533,1,Normal,0.77,Traffic behavior within normal baseline,4.47,Medium,Apply rate limiting and monitor closely
+10.0.0.12,1,135.0,0.0,645.0,1,0.0384615384615384,0.10946457898278039,1,Normal,0.77,Traffic behavior within normal baseline,0.56,Low,Allow traffic and continue monitoring
+10.0.0.12,2,158.5,0.0,553.0,2,0.0769230769230769,0.09032821208203667,1,Normal,1.53,Traffic behavior within normal baseline,0.79,Low,Allow traffic and continue monitoring
+10.0.0.12,1,148.0,0.0,514.0,1,0.0384615384615384,0.12193646088964527,1,Normal,0.77,Traffic behavior within normal baseline,0.6,Low,Allow traffic and continue monitoring
+10.0.0.12,1,133.0,0.0,709.0,1,0.0384615384615384,0.10123641509878556,1,Normal,0.77,Traffic behavior within normal baseline,0.56,Low,Allow traffic and continue monitoring
+10.0.0.12,1,248.0,0.0,580.0,1,0.0384615384615384,0.08408456787405721,1,Normal,0.77,Traffic behavior within normal baseline,0.91,Low,Allow traffic and continue monitoring
+10.0.0.13,1,151.0,0.0,741.0,1,0.0384615384615384,0.09415751553371171,1,Normal,0.77,Traffic behavior within normal baseline,0.61,Low,Allow traffic and continue monitoring
+10.0.0.13,1,226.0,0.0,555.0,1,0.0384615384615384,0.10893296428145227,1,Normal,0.77,Traffic behavior within normal baseline,0.84,Low,Allow traffic and continue monitoring
+10.0.0.13,2,177.5,0.0,504.5,2,0.0769230769230769,0.09573724064262068,1,Normal,1.53,Traffic behavior within normal baseline,0.85,Low,Allow traffic and continue monitoring
+10.0.0.13,1,196.0,0.0,396.0,1,0.0384615384615384,0.11948806645091947,1,Normal,0.77,Traffic behavior within normal baseline,0.75,Low,Allow traffic and continue monitoring
+10.0.0.13,1,141.0,0.0,333.0,1,0.0384615384615384,0.10324879689902011,1,Normal,0.77,Traffic behavior within normal baseline,0.58,Low,Allow traffic and continue monitoring
+10.0.0.13,2,231.0,1.0,351.0,1,0.0769230769230769,-0.05134240612372254,-1,Anomaly,1.53,Unusually high error rate observed,5.01,Medium,Apply rate limiting and monitor closely
+10.0.0.13,1,244.0,0.0,559.0,1,0.0384615384615384,0.09315129765317531,1,Normal,0.77,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.13,1,106.0,1.0,402.0,1,0.0384615384615384,0.03203377144071762,1,Normal,0.77,Traffic behavior within normal baseline,4.48,Medium,Apply rate limiting and monitor closely
+10.0.0.13,1,236.0,0.0,565.0,1,0.0384615384615384,0.10070299285134443,1,Normal,0.77,Traffic behavior within normal baseline,0.87,Low,Allow traffic and continue monitoring
+10.0.0.13,1,157.0,0.0,531.0,1,0.0384615384615384,0.12044154325986095,1,Normal,0.77,Traffic behavior within normal baseline,0.63,Low,Allow traffic and continue monitoring
+10.0.0.13,2,155.0,0.0,676.0,2,0.0769230769230769,0.0516590075024701,1,Normal,1.53,Traffic behavior within normal baseline,0.78,Low,Allow traffic and continue monitoring
+10.0.0.13,2,219.5,0.5,642.0,2,0.0769230769230769,0.02399752393514909,1,Normal,1.53,Traffic behavior within normal baseline,2.97,Low,Allow traffic and continue monitoring
+10.0.0.14,1,231.0,0.0,643.0,1,0.0384615384615384,0.09427349409585767,1,Normal,0.77,Traffic behavior within normal baseline,0.85,Low,Allow traffic and continue monitoring
+10.0.0.14,1,160.0,0.0,270.0,1,0.0384615384615384,0.10468017859655665,1,Normal,0.77,Traffic behavior within normal baseline,0.64,Low,Allow traffic and continue monitoring
+10.0.0.14,2,143.0,1.0,689.5,1,0.0769230769230769,-0.052839729534514324,-1,Anomaly,1.53,Unusually high error rate observed,4.74,Medium,Apply rate limiting and monitor closely
+10.0.0.14,2,184.5,0.0,636.5,2,0.0769230769230769,0.08249180510538362,1,Normal,1.53,Traffic behavior within normal baseline,0.87,Low,Allow traffic and continue monitoring
+10.0.0.14,1,199.0,0.0,302.0,1,0.0384615384615384,0.11572721737946562,1,Normal,0.77,Traffic behavior within normal baseline,0.76,Low,Allow traffic and continue monitoring
+10.0.0.14,1,107.0,0.0,539.0,1,0.0384615384615384,0.11178995560216232,1,Normal,0.77,Traffic behavior within normal baseline,0.48,Low,Allow traffic and continue monitoring
+10.0.0.14,1,185.0,0.0,797.0,1,0.0384615384615384,0.06252172824361962,1,Normal,0.77,Traffic behavior within normal baseline,0.72,Low,Allow traffic and continue monitoring
+10.0.0.14,1,184.0,0.0,272.0,1,0.0384615384615384,0.1086098277412571,1,Normal,0.77,Traffic behavior within normal baseline,0.71,Low,Allow traffic and continue monitoring
+10.0.0.14,1,221.0,0.0,375.0,1,0.0384615384615384,0.11144781519169139,1,Normal,0.77,Traffic behavior within normal baseline,0.82,Low,Allow traffic and continue monitoring
+10.0.0.14,2,130.5,0.5,416.5,2,0.0769230769230769,0.07090546830226663,1,Normal,1.53,Traffic behavior within normal baseline,2.7,Low,Allow traffic and continue monitoring
+10.0.0.15,1,238.0,1.0,350.0,1,0.0384615384615384,0.03492584772621182,1,Normal,0.77,Traffic behavior within normal baseline,4.88,Medium,Apply rate limiting and monitor closely
+10.0.0.15,1,179.0,1.0,637.0,1,0.0384615384615384,0.07855038602310493,1,Normal,0.77,Traffic behavior within normal baseline,4.7,Medium,Apply rate limiting and monitor closely
+10.0.0.15,1,182.0,1.0,473.0,1,0.0384615384615384,0.08000082922767388,1,Normal,0.77,Traffic behavior within normal baseline,4.71,Medium,Apply rate limiting and monitor closely
+10.0.0.15,1,206.0,1.0,304.0,1,0.0384615384615384,0.05765938001301729,1,Normal,0.77,Traffic behavior within normal baseline,4.78,Medium,Apply rate limiting and monitor closely
+10.0.0.15,1,143.0,0.0,477.0,1,0.0384615384615384,0.11160731583265637,1,Normal,0.77,Traffic behavior within normal baseline,0.59,Low,Allow traffic and continue monitoring
+10.0.0.15,1,178.0,0.0,603.0,1,0.0384615384615384,0.11778311802522229,1,Normal,0.77,Traffic behavior within normal baseline,0.69,Low,Allow traffic and continue monitoring
+10.0.0.15,1,181.0,1.0,230.0,1,0.0384615384615384,0.042278771771173396,1,Normal,0.77,Traffic behavior within normal baseline,4.7,Medium,Apply rate limiting and monitor closely
+10.0.0.16,1,196.0,0.0,755.0,1,0.0384615384615384,0.08373474647714907,1,Normal,0.77,Traffic behavior within normal baseline,0.75,Low,Allow traffic and continue monitoring
+10.0.0.16,1,218.0,1.0,687.0,1,0.0384615384615384,0.06710479926654755,1,Normal,0.77,Traffic behavior within normal baseline,4.82,Medium,Apply rate limiting and monitor closely
+10.0.0.16,1,99.0,1.0,480.0,1,0.0384615384615384,0.02932017279145399,1,Normal,0.77,Traffic behavior within normal baseline,4.45,Medium,Apply rate limiting and monitor closely
+10.0.0.16,1,238.0,0.0,564.0,1,0.0384615384615384,0.10154102158739048,1,Normal,0.77,Traffic behavior within normal baseline,0.88,Low,Allow traffic and continue monitoring
+10.0.0.16,1,96.0,0.0,529.0,1,0.0384615384615384,0.09253391650230991,1,Normal,0.77,Traffic behavior within normal baseline,0.45,Low,Allow traffic and continue monitoring
+10.0.0.16,2,154.0,0.5,267.0,1,0.0769230769230769,-0.02014242776202313,-1,Anomaly,1.53,Unusually high error rate observed,2.78,Low,Allow traffic and continue monitoring
+10.0.0.16,1,179.0,0.0,325.0,1,0.0384615384615384,0.11407696939224843,1,Normal,0.77,Traffic behavior within normal baseline,0.7,Low,Allow traffic and continue monitoring
+10.0.0.16,3,182.33333333333331,0.3333333333333333,572.0,2,0.1153846153846153,0.007239863143577052,1,Normal,2.3,Traffic behavior within normal baseline,2.35,Low,Allow traffic and continue monitoring
+10.0.0.16,2,175.0,0.5,587.5,1,0.0769230769230769,0.017391955765229117,1,Normal,1.53,Traffic behavior within normal baseline,2.84,Low,Allow traffic and continue monitoring
+10.0.0.17,1,181.0,1.0,494.0,1,0.0384615384615384,0.08331332253699286,1,Normal,0.77,Traffic behavior within normal baseline,4.7,Medium,Apply rate limiting and monitor closely
+10.0.0.17,2,128.0,0.0,501.0,2,0.0769230769230769,0.07190987691848355,1,Normal,1.53,Traffic behavior within normal baseline,0.7,Low,Allow traffic and continue monitoring
+10.0.0.17,2,118.5,1.0,436.5,1,0.0769230769230769,-0.028230620985520316,-1,Anomaly,1.53,Unusually high error rate observed,4.67,Medium,Apply rate limiting and monitor closely
+10.0.0.17,2,172.5,0.5,335.0,2,0.0769230769230769,0.05172245690446586,1,Normal,1.53,Traffic behavior within normal baseline,2.83,Low,Allow traffic and continue monitoring
+10.0.0.17,2,188.5,0.0,510.0,2,0.0769230769230769,0.09274472229893777,1,Normal,1.53,Traffic behavior within normal baseline,0.88,Low,Allow traffic and continue monitoring
+10.0.0.17,2,172.5,0.0,660.5,1,0.0769230769230769,0.033781947574896276,1,Normal,1.53,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.17,1,203.0,0.0,654.0,1,0.0384615384615384,0.10572764944996821,1,Normal,0.77,Traffic behavior within normal baseline,0.77,Low,Allow traffic and continue monitoring
+10.0.0.17,1,158.0,1.0,405.0,1,0.0384615384615384,0.06515159323858893,1,Normal,0.77,Traffic behavior within normal baseline,4.63,Medium,Apply rate limiting and monitor closely
+10.0.0.17,2,223.0,0.5,586.5,1,0.0769230769230769,-0.012336739213410719,-1,Anomaly,1.53,Unusually high error rate observed,2.98,Low,Allow traffic and continue monitoring
+10.0.0.17,1,111.0,0.0,310.0,1,0.0384615384615384,0.09853791376216336,1,Normal,0.77,Traffic behavior within normal baseline,0.49,Low,Allow traffic and continue monitoring
+10.0.0.17,1,114.0,0.0,388.0,1,0.0384615384615384,0.10582447526013561,1,Normal,0.77,Traffic behavior within normal baseline,0.5,Low,Allow traffic and continue monitoring
+10.0.0.17,4,157.75,0.0,422.0,3,0.1538461538461538,-0.12141377570302425,-1,Anomaly,3.07,Request rate exceeded baseline by 3.07×; Accessing unusually high number of endpoints,1.09,Low,Allow traffic and continue monitoring
+10.0.0.17,1,214.0,1.0,674.0,1,0.0384615384615384,0.07324568449865765,1,Normal,0.77,Traffic behavior within normal baseline,4.8,Medium,Apply rate limiting and monitor closely
+10.0.0.18,3,194.66666666666663,0.6666666666666666,380.3333333333333,3,0.1153846153846153,-0.06814742833875242,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Unusually high error rate observed; Accessing unusually high number of endpoints,3.72,Low,Allow traffic and continue monitoring
+10.0.0.18,1,250.0,0.0,264.0,1,0.0384615384615384,0.0519767341313474,1,Normal,0.77,Traffic behavior within normal baseline,0.91,Low,Allow traffic and continue monitoring
+10.0.0.18,2,132.5,0.5,444.0,1,0.0769230769230769,0.011301800089946745,1,Normal,1.53,Traffic behavior within normal baseline,2.71,Low,Allow traffic and continue monitoring
+10.0.0.18,1,125.0,0.0,290.0,1,0.0384615384615384,0.09829401055538223,1,Normal,0.77,Traffic behavior within normal baseline,0.53,Low,Allow traffic and continue monitoring
+10.0.0.18,3,162.66666666666666,0.0,360.3333333333333,2,0.1153846153846153,0.005239787881357594,1,Normal,2.3,Traffic behavior within normal baseline,0.96,Low,Allow traffic and continue monitoring
+10.0.0.18,1,176.0,0.0,568.0,1,0.0384615384615384,0.11870000135775155,1,Normal,0.77,Traffic behavior within normal baseline,0.69,Low,Allow traffic and continue monitoring
+10.0.0.18,1,120.0,0.0,315.0,1,0.0384615384615384,0.09719451621611735,1,Normal,0.77,Traffic behavior within normal baseline,0.52,Low,Allow traffic and continue monitoring
+10.0.0.18,1,100.0,0.0,665.0,1,0.0384615384615384,0.09046812201265958,1,Normal,0.77,Traffic behavior within normal baseline,0.46,Low,Allow traffic and continue monitoring
+10.0.0.18,2,198.5,0.5,650.0,2,0.0769230769230769,0.04583131184807232,1,Normal,1.53,Traffic behavior within normal baseline,2.91,Low,Allow traffic and continue monitoring
+10.0.0.19,2,179.0,0.5,218.5,2,0.0769230769230769,0.008247477310312279,1,Normal,1.53,Traffic behavior within normal baseline,2.85,Low,Allow traffic and continue monitoring
+10.0.0.19,2,91.0,0.0,617.0,2,0.0769230769230769,0.014064250893662922,1,Normal,1.53,Traffic behavior within normal baseline,0.58,Low,Allow traffic and continue monitoring
+10.0.0.19,2,173.0,0.0,468.5,2,0.0769230769230769,0.09864069404988263,1,Normal,1.53,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.19,1,131.0,0.0,778.0,1,0.0384615384615384,0.0746911859321367,1,Normal,0.77,Traffic behavior within normal baseline,0.55,Low,Allow traffic and continue monitoring
+10.0.0.19,2,209.0,0.5,309.5,2,0.0769230769230769,0.0327180370964017,1,Normal,1.53,Traffic behavior within normal baseline,2.94,Low,Allow traffic and continue monitoring
+10.0.0.19,1,162.0,1.0,415.0,1,0.0384615384615384,0.06549477857683011,1,Normal,0.77,Traffic behavior within normal baseline,4.65,Medium,Apply rate limiting and monitor closely
+10.0.0.19,2,165.0,0.0,462.0,2,0.0769230769230769,0.0993669161814158,1,Normal,1.53,Traffic behavior within normal baseline,0.81,Low,Allow traffic and continue monitoring
+10.0.0.19,3,216.0,0.0,489.0,2,0.1153846153846153,-0.02538951886815033,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,1.12,Low,Allow traffic and continue monitoring
+10.0.0.19,2,181.0,0.5,735.0,2,0.0769230769230769,0.0036443477469428887,1,Normal,1.53,Traffic behavior within normal baseline,2.86,Low,Allow traffic and continue monitoring
+10.0.0.2,1,200.0,0.0,266.0,1,0.0384615384615384,0.10784614536597048,1,Normal,0.77,Traffic behavior within normal baseline,0.76,Low,Allow traffic and continue monitoring
+10.0.0.2,2,121.0,0.0,429.0,1,0.0769230769230769,0.03637857165633107,1,Normal,1.53,Traffic behavior within normal baseline,0.67,Low,Allow traffic and continue monitoring
+10.0.0.2,1,130.0,0.0,553.0,1,0.0384615384615384,0.11809936273030786,1,Normal,0.77,Traffic behavior within normal baseline,0.55,Low,Allow traffic and continue monitoring
+10.0.0.2,1,124.0,0.0,539.0,1,0.0384615384615384,0.1219623178085763,1,Normal,0.77,Traffic behavior within normal baseline,0.53,Low,Allow traffic and continue monitoring
+10.0.0.2,2,140.5,0.0,358.5,2,0.0769230769230769,0.06342787720772569,1,Normal,1.53,Traffic behavior within normal baseline,0.73,Low,Allow traffic and continue monitoring
+10.0.0.2,2,179.0,0.0,540.5,2,0.0769230769230769,0.0913872462933294,1,Normal,1.53,Traffic behavior within normal baseline,0.85,Low,Allow traffic and continue monitoring
+10.0.0.2,1,189.0,0.0,309.0,1,0.0384615384615384,0.11641501565054269,1,Normal,0.77,Traffic behavior within normal baseline,0.73,Low,Allow traffic and continue monitoring
+10.0.0.2,1,174.0,0.0,597.0,1,0.0384615384615384,0.11720095396430497,1,Normal,0.77,Traffic behavior within normal baseline,0.68,Low,Allow traffic and continue monitoring
+10.0.0.2,1,248.0,0.0,558.0,1,0.0384615384615384,0.08783607841876123,1,Normal,0.77,Traffic behavior within normal baseline,0.91,Low,Allow traffic and continue monitoring
+10.0.0.2,3,195.66666666666663,0.3333333333333333,397.3333333333333,3,0.1153846153846153,-0.0398259922152302,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,2.39,Low,Allow traffic and continue monitoring
+10.0.0.20,1,248.0,1.0,664.0,1,0.0384615384615384,0.0480600330041967,1,Normal,0.77,Traffic behavior within normal baseline,4.91,Medium,Apply rate limiting and monitor closely
+10.0.0.20,1,87.0,1.0,539.0,1,0.0384615384615384,0.027950380465074143,1,Normal,0.77,Traffic behavior within normal baseline,4.42,Medium,Apply rate limiting and monitor closely
+10.0.0.20,3,174.0,0.3333333333333333,543.0,3,0.1153846153846153,-0.010059853902707694,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,2.32,Low,Allow traffic and continue monitoring
+10.0.0.20,1,191.0,0.0,487.0,1,0.0384615384615384,0.12201344377016288,1,Normal,0.77,Traffic behavior within normal baseline,0.73,Low,Allow traffic and continue monitoring
+10.0.0.20,2,212.0,0.0,615.5,2,0.0769230769230769,0.050064640431997764,1,Normal,1.53,Traffic behavior within normal baseline,0.95,Low,Allow traffic and continue monitoring
+10.0.0.20,4,183.0,0.25,667.5,2,0.1538461538461538,-0.10810369190229852,-1,Anomaly,3.07,Request rate exceeded baseline by 3.07×; Accessing unusually high number of endpoints,2.17,Low,Allow traffic and continue monitoring
+10.0.0.20,1,107.0,0.0,577.0,1,0.0384615384615384,0.10666927273076371,1,Normal,0.77,Traffic behavior within normal baseline,0.48,Low,Allow traffic and continue monitoring
+10.0.0.200,1,250.0,1.0,824.0,1,0.0384615384615384,0.015293670542760873,1,Normal,0.77,Traffic behavior within normal baseline,4.91,Medium,Apply rate limiting and monitor closely
+10.0.0.200,1,336.0,1.0,768.0,1,0.0384615384615384,-0.03241550898523993,-1,Anomaly,0.77,Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads,5.17,Medium,Apply rate limiting and monitor closely
+10.0.0.200,1,323.0,1.0,797.0,1,0.0384615384615384,-0.029457603711372404,-1,Anomaly,0.77,Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads,5.13,Medium,Apply rate limiting and monitor closely
+10.0.0.200,1,348.0,1.0,768.0,1,0.0384615384615384,-0.04135009731687622,-1,Anomaly,0.77,Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads,5.21,Medium,Apply rate limiting and monitor closely
+10.0.0.200,1,345.0,1.0,832.0,1,0.0384615384615384,-0.06406858711492269,-1,Anomaly,0.77,Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads,5.2,Medium,Apply rate limiting and monitor closely
+10.0.0.200,1,301.0,1.0,731.0,1,0.0384615384615384,0.008792141030736667,1,Normal,0.77,Traffic behavior within normal baseline,5.07,Medium,Apply rate limiting and monitor closely
+10.0.0.200,1,259.0,1.0,715.0,1,0.0384615384615384,0.03150045765013004,1,Normal,0.77,Traffic behavior within normal baseline,4.94,Medium,Apply rate limiting and monitor closely
+10.0.0.200,1,315.0,1.0,830.0,1,0.0384615384615384,-0.03173303044551434,-1,Anomaly,0.77,Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads,5.11,Medium,Apply rate limiting and monitor closely
+10.0.0.200,1,287.0,1.0,830.0,1,0.0384615384615384,-0.014619362592609098,-1,Anomaly,0.77,Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads,5.02,Medium,Apply rate limiting and monitor closely
+10.0.0.21,1,175.0,0.0,270.0,1,0.0384615384615384,0.10802128451964677,1,Normal,0.77,Traffic behavior within normal baseline,0.69,Low,Allow traffic and continue monitoring
+10.0.0.21,1,113.0,0.0,727.0,1,0.0384615384615384,0.08878637645592702,1,Normal,0.77,Traffic behavior within normal baseline,0.5,Low,Allow traffic and continue monitoring
+10.0.0.21,2,139.5,0.5,443.0,2,0.0769230769230769,0.07888154728312796,1,Normal,1.53,Traffic behavior within normal baseline,2.73,Low,Allow traffic and continue monitoring
+10.0.0.21,1,177.0,0.0,212.0,1,0.0384615384615384,0.07684243304298022,1,Normal,0.77,Traffic behavior within normal baseline,0.69,Low,Allow traffic and continue monitoring
+10.0.0.21,1,199.0,0.0,207.0,1,0.0384615384615384,0.07199931195097026,1,Normal,0.77,Traffic behavior within normal baseline,0.76,Low,Allow traffic and continue monitoring
+10.0.0.21,1,187.0,0.0,749.0,1,0.0384615384615384,0.08658991434092256,1,Normal,0.77,Traffic behavior within normal baseline,0.72,Low,Allow traffic and continue monitoring
+10.0.0.21,3,225.0,0.6666666666666666,552.3333333333334,2,0.1153846153846153,-0.05181128152814851,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Unusually high error rate observed; Accessing unusually high number of endpoints,3.81,Low,Allow traffic and continue monitoring
+10.0.0.22,1,99.0,0.0,204.0,1,0.0384615384615384,0.050805490828299826,1,Normal,0.77,Traffic behavior within normal baseline,0.45,Low,Allow traffic and continue monitoring
+10.0.0.22,2,122.5,0.5,596.0,2,0.0769230769230769,0.0440278038845337,1,Normal,1.53,Traffic behavior within normal baseline,2.68,Low,Allow traffic and continue monitoring
+10.0.0.22,1,103.0,0.0,268.0,1,0.0384615384615384,0.086837783675833,1,Normal,0.77,Traffic behavior within normal baseline,0.47,Low,Allow traffic and continue monitoring
+10.0.0.22,1,118.0,0.0,700.0,1,0.0384615384615384,0.09341268966712157,1,Normal,0.77,Traffic behavior within normal baseline,0.51,Low,Allow traffic and continue monitoring
+10.0.0.22,1,225.0,0.0,304.0,1,0.0384615384615384,0.10710478769552162,1,Normal,0.77,Traffic behavior within normal baseline,0.84,Low,Allow traffic and continue monitoring
+10.0.0.22,2,193.0,0.0,421.0,2,0.0769230769230769,0.08763745146549945,1,Normal,1.53,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.22,2,233.5,0.0,436.5,1,0.0769230769230769,0.006263025311621262,1,Normal,1.53,Traffic behavior within normal baseline,1.02,Low,Allow traffic and continue monitoring
+10.0.0.23,3,164.66666666666666,0.3333333333333333,624.3333333333334,2,0.1153846153846153,-0.007657159471171737,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,2.29,Low,Allow traffic and continue monitoring
+10.0.0.23,2,152.5,0.5,516.5,2,0.0769230769230769,0.07788049136451897,1,Normal,1.53,Traffic behavior within normal baseline,2.77,Low,Allow traffic and continue monitoring
+10.0.0.23,1,148.0,0.0,495.0,1,0.0384615384615384,0.12161634832509671,1,Normal,0.77,Traffic behavior within normal baseline,0.6,Low,Allow traffic and continue monitoring
+10.0.0.23,1,118.0,0.0,278.0,1,0.0384615384615384,0.09400857408401941,1,Normal,0.77,Traffic behavior within normal baseline,0.51,Low,Allow traffic and continue monitoring
+10.0.0.23,1,200.0,0.0,359.0,1,0.0384615384615384,0.11963791288879322,1,Normal,0.77,Traffic behavior within normal baseline,0.76,Low,Allow traffic and continue monitoring
+10.0.0.23,2,140.0,0.0,585.5,1,0.0769230769230769,0.04860874893304851,1,Normal,1.53,Traffic behavior within normal baseline,0.73,Low,Allow traffic and continue monitoring
+10.0.0.23,1,153.0,0.0,505.0,1,0.0384615384615384,0.12211931564050421,1,Normal,0.77,Traffic behavior within normal baseline,0.62,Low,Allow traffic and continue monitoring
+10.0.0.23,2,120.0,0.0,254.0,2,0.0769230769230769,-0.0024355904147622676,-1,Anomaly,1.53,Accessing unusually high number of endpoints,0.67,Low,Allow traffic and continue monitoring
+10.0.0.23,3,194.33333333333331,0.0,405.6666666666667,2,0.1153846153846153,-0.00425942255579137,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,1.05,Low,Allow traffic and continue monitoring
+10.0.0.24,3,145.66666666666666,0.0,361.6666666666667,2,0.1153846153846153,-0.004224029857255229,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,0.9,Low,Allow traffic and continue monitoring
+10.0.0.24,1,174.0,0.0,443.0,1,0.0384615384615384,0.11132396021366886,1,Normal,0.77,Traffic behavior within normal baseline,0.68,Low,Allow traffic and continue monitoring
+10.0.0.24,2,162.0,0.0,485.0,2,0.0769230769230769,0.0997746140540664,1,Normal,1.53,Traffic behavior within normal baseline,0.8,Low,Allow traffic and continue monitoring
+10.0.0.24,1,138.0,1.0,638.0,1,0.0384615384615384,0.05492344937814242,1,Normal,0.77,Traffic behavior within normal baseline,4.57,Medium,Apply rate limiting and monitor closely
+10.0.0.24,1,220.0,1.0,640.0,1,0.0384615384615384,0.07217929359827413,1,Normal,0.77,Traffic behavior within normal baseline,4.82,Medium,Apply rate limiting and monitor closely
+10.0.0.24,1,211.0,1.0,743.0,1,0.0384615384615384,0.05667887376488551,1,Normal,0.77,Traffic behavior within normal baseline,4.79,Medium,Apply rate limiting and monitor closely
+10.0.0.24,2,120.5,0.5,482.0,2,0.0769230769230769,0.061628157178310994,1,Normal,1.53,Traffic behavior within normal baseline,2.67,Low,Allow traffic and continue monitoring
+10.0.0.24,1,180.0,1.0,228.0,1,0.0384615384615384,0.0397613292585558,1,Normal,0.77,Traffic behavior within normal baseline,4.7,Medium,Apply rate limiting and monitor closely
+10.0.0.24,2,173.5,0.5,485.0,1,0.0769230769230769,0.026111836977678382,1,Normal,1.53,Traffic behavior within normal baseline,2.83,Low,Allow traffic and continue monitoring
+10.0.0.24,1,124.0,0.0,347.0,1,0.0384615384615384,0.11140302460549989,1,Normal,0.77,Traffic behavior within normal baseline,0.53,Low,Allow traffic and continue monitoring
+10.0.0.25,2,203.0,0.0,312.0,2,0.0769230769230769,0.04050671999593097,1,Normal,1.53,Traffic behavior within normal baseline,0.92,Low,Allow traffic and continue monitoring
+10.0.0.25,1,150.0,0.0,660.0,1,0.0384615384615384,0.11112837677552051,1,Normal,0.77,Traffic behavior within normal baseline,0.61,Low,Allow traffic and continue monitoring
+10.0.0.25,3,132.66666666666666,0.0,290.6666666666667,2,0.1153846153846153,-0.04861453637762547,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,0.86,Low,Allow traffic and continue monitoring
+10.0.0.25,2,103.0,0.5,694.5,1,0.0769230769230769,-0.04044276195120988,-1,Anomaly,1.53,Unusually high error rate observed,2.62,Low,Allow traffic and continue monitoring
+10.0.0.25,1,128.0,1.0,658.0,1,0.0384615384615384,0.04864522878189376,1,Normal,0.77,Traffic behavior within normal baseline,4.54,Medium,Apply rate limiting and monitor closely
+10.0.0.25,2,135.0,0.5,414.5,2,0.0769230769230769,0.07332607600147728,1,Normal,1.53,Traffic behavior within normal baseline,2.72,Low,Allow traffic and continue monitoring
+10.0.0.26,4,198.0,0.5,424.5,4,0.1538461538461538,-0.1361915361403121,-1,Anomaly,3.07,Request rate exceeded baseline by 3.07×; Unusually high error rate observed; Accessing unusually high number of endpoints,3.22,Low,Allow traffic and continue monitoring
+10.0.0.26,2,197.0,0.0,622.5,2,0.0769230769230769,0.07388258070023118,1,Normal,1.53,Traffic behavior within normal baseline,0.91,Low,Allow traffic and continue monitoring
+10.0.0.26,1,172.0,0.0,349.0,1,0.0384615384615384,0.11460378325796189,1,Normal,0.77,Traffic behavior within normal baseline,0.68,Low,Allow traffic and continue monitoring
+10.0.0.26,3,189.33333333333331,0.3333333333333333,557.6666666666666,3,0.1153846153846153,-0.019601497941966306,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,2.37,Low,Allow traffic and continue monitoring
+10.0.0.26,1,249.0,0.0,503.0,1,0.0384615384615384,0.08173093702531936,1,Normal,0.77,Traffic behavior within normal baseline,0.91,Low,Allow traffic and continue monitoring
+10.0.0.26,1,217.0,0.0,277.0,1,0.0384615384615384,0.10144435903006382,1,Normal,0.77,Traffic behavior within normal baseline,0.81,Low,Allow traffic and continue monitoring
+10.0.0.26,3,151.66666666666666,0.0,625.0,3,0.1153846153846153,-0.03289350644203448,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,0.92,Low,Allow traffic and continue monitoring
+10.0.0.26,1,125.0,0.0,418.0,1,0.0384615384615384,0.10831740080760771,1,Normal,0.77,Traffic behavior within normal baseline,0.53,Low,Allow traffic and continue monitoring
+10.0.0.26,3,209.33333333333331,0.0,495.0,2,0.1153846153846153,-0.01589062872680802,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,1.1,Low,Allow traffic and continue monitoring
+10.0.0.26,1,148.0,0.0,421.0,1,0.0384615384615384,0.11255807860815797,1,Normal,0.77,Traffic behavior within normal baseline,0.6,Low,Allow traffic and continue monitoring
+10.0.0.26,1,241.0,0.0,638.0,1,0.0384615384615384,0.0843097407331535,1,Normal,0.77,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.26,2,223.0,1.0,696.0,2,0.0769230769230769,-0.07127840940794328,-1,Anomaly,1.53,Unusually high error rate observed; Accessing unusually high number of endpoints,4.98,Medium,Apply rate limiting and monitor closely
+10.0.0.26,1,194.0,0.0,729.0,1,0.0384615384615384,0.09474787571527626,1,Normal,0.77,Traffic behavior within normal baseline,0.74,Low,Allow traffic and continue monitoring
+10.0.0.27,1,211.0,1.0,545.0,1,0.0384615384615384,0.07995819067311888,1,Normal,0.77,Traffic behavior within normal baseline,4.79,Medium,Apply rate limiting and monitor closely
+10.0.0.27,2,193.0,0.0,289.5,1,0.0769230769230769,0.01946427614862456,1,Normal,1.53,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.27,3,146.66666666666666,0.3333333333333333,612.3333333333334,3,0.1153846153846153,-0.027264501235953142,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,2.24,Low,Allow traffic and continue monitoring
+10.0.0.27,2,151.0,0.5,676.5,2,0.0769230769230769,0.03235519853267721,1,Normal,1.53,Traffic behavior within normal baseline,2.77,Low,Allow traffic and continue monitoring
+10.0.0.27,1,244.0,0.0,340.0,1,0.0384615384615384,0.08083725616372134,1,Normal,0.77,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.27,1,153.0,0.0,738.0,1,0.0384615384615384,0.0920278096700301,1,Normal,0.77,Traffic behavior within normal baseline,0.62,Low,Allow traffic and continue monitoring
+10.0.0.27,1,147.0,0.0,201.0,1,0.0384615384615384,0.06739156926489093,1,Normal,0.77,Traffic behavior within normal baseline,0.6,Low,Allow traffic and continue monitoring
+10.0.0.28,1,225.0,0.0,658.0,1,0.0384615384615384,0.09759670298033718,1,Normal,0.77,Traffic behavior within normal baseline,0.84,Low,Allow traffic and continue monitoring
+10.0.0.28,2,233.0,0.0,327.5,2,0.0769230769230769,0.0030185262243085376,1,Normal,1.53,Traffic behavior within normal baseline,1.01,Low,Allow traffic and continue monitoring
+10.0.0.28,1,223.0,0.0,376.0,1,0.0384615384615384,0.11094410112989306,1,Normal,0.77,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.28,3,161.0,0.3333333333333333,402.6666666666667,2,0.1153846153846153,0.0009996021360215712,1,Normal,2.3,Traffic behavior within normal baseline,2.28,Low,Allow traffic and continue monitoring
+10.0.0.28,1,92.0,0.0,259.0,1,0.0384615384615384,0.061931578129011844,1,Normal,0.77,Traffic behavior within normal baseline,0.43,Low,Allow traffic and continue monitoring
+10.0.0.28,1,228.0,0.0,296.0,1,0.0384615384615384,0.10339280884387203,1,Normal,0.77,Traffic behavior within normal baseline,0.85,Low,Allow traffic and continue monitoring
+10.0.0.28,2,175.5,0.0,649.5,2,0.0769230769230769,0.07645449394377174,1,Normal,1.53,Traffic behavior within normal baseline,0.84,Low,Allow traffic and continue monitoring
+10.0.0.28,1,249.0,1.0,363.0,1,0.0384615384615384,0.01970553118652041,1,Normal,0.77,Traffic behavior within normal baseline,4.91,Medium,Apply rate limiting and monitor closely
+10.0.0.28,1,113.0,0.0,268.0,1,0.0384615384615384,0.099632923192296,1,Normal,0.77,Traffic behavior within normal baseline,0.5,Low,Allow traffic and continue monitoring
+10.0.0.28,1,85.0,0.0,482.0,1,0.0384615384615384,0.06825203002303748,1,Normal,0.77,Traffic behavior within normal baseline,0.41,Low,Allow traffic and continue monitoring
+10.0.0.28,2,129.0,0.0,252.5,2,0.0769230769230769,0.013394088936397042,1,Normal,1.53,Traffic behavior within normal baseline,0.7,Low,Allow traffic and continue monitoring
+10.0.0.29,1,153.0,0.0,490.0,1,0.0384615384615384,0.12006823382209653,1,Normal,0.77,Traffic behavior within normal baseline,0.62,Low,Allow traffic and continue monitoring
+10.0.0.29,1,119.0,0.0,285.0,1,0.0384615384615384,0.09260358182387307,1,Normal,0.77,Traffic behavior within normal baseline,0.52,Low,Allow traffic and continue monitoring
+10.0.0.29,1,199.0,0.0,334.0,1,0.0384615384615384,0.12002491091578393,1,Normal,0.77,Traffic behavior within normal baseline,0.76,Low,Allow traffic and continue monitoring
+10.0.0.29,2,168.5,0.0,647.0,2,0.0769230769230769,0.0756093090346428,1,Normal,1.53,Traffic behavior within normal baseline,0.82,Low,Allow traffic and continue monitoring
+10.0.0.29,1,220.0,0.0,785.0,1,0.0384615384615384,0.06740852289534305,1,Normal,0.77,Traffic behavior within normal baseline,0.82,Low,Allow traffic and continue monitoring
+10.0.0.29,1,239.0,0.0,500.0,1,0.0384615384615384,0.09966093707604307,1,Normal,0.77,Traffic behavior within normal baseline,0.88,Low,Allow traffic and continue monitoring
+10.0.0.29,1,134.0,0.0,538.0,1,0.0384615384615384,0.12083567912061799,1,Normal,0.77,Traffic behavior within normal baseline,0.56,Low,Allow traffic and continue monitoring
+10.0.0.29,1,238.0,0.0,755.0,1,0.0384615384615384,0.06033581562194612,1,Normal,0.77,Traffic behavior within normal baseline,0.88,Low,Allow traffic and continue monitoring
+10.0.0.29,2,137.5,0.0,532.0,1,0.0769230769230769,0.05522646580750862,1,Normal,1.53,Traffic behavior within normal baseline,0.73,Low,Allow traffic and continue monitoring
+10.0.0.3,2,186.0,0.0,351.0,2,0.0769230769230769,0.07247791690066535,1,Normal,1.53,Traffic behavior within normal baseline,0.87,Low,Allow traffic and continue monitoring
+10.0.0.3,1,86.0,0.0,762.0,1,0.0384615384615384,0.04185632596320632,1,Normal,0.77,Traffic behavior within normal baseline,0.41,Low,Allow traffic and continue monitoring
+10.0.0.3,2,196.5,1.0,526.0,1,0.0769230769230769,-0.026231506852013142,-1,Anomaly,1.53,Unusually high error rate observed,4.9,Medium,Apply rate limiting and monitor closely
+10.0.0.3,1,110.0,0.0,672.0,1,0.0384615384615384,0.09859455818859425,1,Normal,0.77,Traffic behavior within normal baseline,0.49,Low,Allow traffic and continue monitoring
+10.0.0.3,2,165.5,0.5,570.5,2,0.0769230769230769,0.06410322959999104,1,Normal,1.53,Traffic behavior within normal baseline,2.81,Low,Allow traffic and continue monitoring
+10.0.0.3,1,247.0,0.0,381.0,1,0.0384615384615384,0.07690645522998862,1,Normal,0.77,Traffic behavior within normal baseline,0.9,Low,Allow traffic and continue monitoring
+10.0.0.3,1,152.0,1.0,715.0,1,0.0384615384615384,0.0461168739839658,1,Normal,0.77,Traffic behavior within normal baseline,4.62,Medium,Apply rate limiting and monitor closely
+10.0.0.3,1,186.0,0.0,393.0,1,0.0384615384615384,0.11518599397143608,1,Normal,0.77,Traffic behavior within normal baseline,0.72,Low,Allow traffic and continue monitoring
+10.0.0.30,2,92.0,0.0,651.5,2,0.0769230769230769,0.002332718375554488,1,Normal,1.53,Traffic behavior within normal baseline,0.59,Low,Allow traffic and continue monitoring
+10.0.0.30,4,146.0,0.0,677.25,3,0.1538461538461538,-0.1232990166007214,-1,Anomaly,3.07,Request rate exceeded baseline by 3.07×; Accessing unusually high number of endpoints,1.06,Low,Allow traffic and continue monitoring
+10.0.0.30,1,109.0,0.0,229.0,1,0.0384615384615384,0.08368964262618533,1,Normal,0.77,Traffic behavior within normal baseline,0.48,Low,Allow traffic and continue monitoring
+10.0.0.30,2,157.5,0.0,462.5,2,0.0769230769230769,0.097530891648557,1,Normal,1.53,Traffic behavior within normal baseline,0.79,Low,Allow traffic and continue monitoring
+10.0.0.30,2,125.0,0.0,448.5,2,0.0769230769230769,0.06529028167912121,1,Normal,1.53,Traffic behavior within normal baseline,0.69,Low,Allow traffic and continue monitoring
+10.0.0.30,1,226.0,0.0,416.0,1,0.0384615384615384,0.1051083459850578,1,Normal,0.77,Traffic behavior within normal baseline,0.84,Low,Allow traffic and continue monitoring
+10.0.0.30,1,135.0,0.0,796.0,1,0.0384615384615384,0.06196488617917639,1,Normal,0.77,Traffic behavior within normal baseline,0.56,Low,Allow traffic and continue monitoring
+10.0.0.30,2,191.5,0.0,624.0,2,0.0769230769230769,0.07904102909179728,1,Normal,1.53,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.31,2,168.0,0.5,445.0,2,0.0769230769230769,0.0813363284325106,1,Normal,1.53,Traffic behavior within normal baseline,2.82,Low,Allow traffic and continue monitoring
+10.0.0.31,1,237.0,0.0,666.0,1,0.0384615384615384,0.0841900123769812,1,Normal,0.77,Traffic behavior within normal baseline,0.87,Low,Allow traffic and continue monitoring
+10.0.0.31,1,84.0,1.0,423.0,1,0.0384615384615384,0.015682388182175266,1,Normal,0.77,Traffic behavior within normal baseline,4.41,Medium,Apply rate limiting and monitor closely
+10.0.0.31,4,126.75,0.25,543.5,3,0.1538461538461538,-0.1223743619266896,-1,Anomaly,3.07,Request rate exceeded baseline by 3.07×; Accessing unusually high number of endpoints,2.0,Low,Allow traffic and continue monitoring
+10.0.0.31,1,141.0,0.0,791.0,1,0.0384615384615384,0.063488324873264,1,Normal,0.77,Traffic behavior within normal baseline,0.58,Low,Allow traffic and continue monitoring
+10.0.0.31,1,101.0,0.0,570.0,1,0.0384615384615384,0.09857684591364901,1,Normal,0.77,Traffic behavior within normal baseline,0.46,Low,Allow traffic and continue monitoring
+10.0.0.31,2,220.0,0.5,494.0,1,0.0769230769230769,-0.008724694956880219,-1,Anomaly,1.53,Unusually high error rate observed,2.98,Low,Allow traffic and continue monitoring
+10.0.0.31,1,158.0,0.0,304.0,1,0.0384615384615384,0.11019870835997864,1,Normal,0.77,Traffic behavior within normal baseline,0.63,Low,Allow traffic and continue monitoring
+10.0.0.32,1,186.0,1.0,301.0,1,0.0384615384615384,0.06395603108931341,1,Normal,0.77,Traffic behavior within normal baseline,4.72,Medium,Apply rate limiting and monitor closely
+10.0.0.32,2,160.0,0.0,285.5,2,0.0769230769230769,0.04777000694222949,1,Normal,1.53,Traffic behavior within normal baseline,0.79,Low,Allow traffic and continue monitoring
+10.0.0.32,1,229.0,0.0,551.0,1,0.0384615384615384,0.10330346982792082,1,Normal,0.77,Traffic behavior within normal baseline,0.85,Low,Allow traffic and continue monitoring
+10.0.0.32,1,86.0,0.0,639.0,1,0.0384615384615384,0.06722181594330018,1,Normal,0.77,Traffic behavior within normal baseline,0.41,Low,Allow traffic and continue monitoring
+10.0.0.32,1,235.0,0.0,219.0,1,0.0384615384615384,0.05874570824069819,1,Normal,0.77,Traffic behavior within normal baseline,0.87,Low,Allow traffic and continue monitoring
+10.0.0.32,1,171.0,1.0,485.0,1,0.0384615384615384,0.07889940133801598,1,Normal,0.77,Traffic behavior within normal baseline,4.67,Medium,Apply rate limiting and monitor closely
+10.0.0.32,2,128.5,1.0,561.0,2,0.0769230769230769,-0.03601062247462927,-1,Anomaly,1.53,Unusually high error rate observed; Accessing unusually high number of endpoints,4.7,Medium,Apply rate limiting and monitor closely
+10.0.0.32,2,140.5,0.0,508.0,2,0.0769230769230769,0.08489544199723498,1,Normal,1.53,Traffic behavior within normal baseline,0.73,Low,Allow traffic and continue monitoring
+10.0.0.32,1,130.0,0.0,337.0,1,0.0384615384615384,0.10909601499627902,1,Normal,0.77,Traffic behavior within normal baseline,0.55,Low,Allow traffic and continue monitoring
+10.0.0.32,1,183.0,1.0,302.0,1,0.0384615384615384,0.06485068867452504,1,Normal,0.77,Traffic behavior within normal baseline,4.71,Medium,Apply rate limiting and monitor closely
+10.0.0.33,1,234.0,0.0,312.0,1,0.0384615384615384,0.09561252256103414,1,Normal,0.77,Traffic behavior within normal baseline,0.86,Low,Allow traffic and continue monitoring
+10.0.0.33,1,115.0,0.0,495.0,1,0.0384615384615384,0.10901178517540833,1,Normal,0.77,Traffic behavior within normal baseline,0.5,Low,Allow traffic and continue monitoring
+10.0.0.33,1,246.0,0.0,628.0,1,0.0384615384615384,0.08079120349590391,1,Normal,0.77,Traffic behavior within normal baseline,0.9,Low,Allow traffic and continue monitoring
+10.0.0.33,2,183.0,0.5,447.5,2,0.0769230769230769,0.0757059600669675,1,Normal,1.53,Traffic behavior within normal baseline,2.86,Low,Allow traffic and continue monitoring
+10.0.0.33,2,170.0,0.5,595.5,2,0.0769230769230769,0.06301324970570521,1,Normal,1.53,Traffic behavior within normal baseline,2.82,Low,Allow traffic and continue monitoring
+10.0.0.33,1,215.0,1.0,784.0,1,0.0384615384615384,0.04752389798201562,1,Normal,0.77,Traffic behavior within normal baseline,4.81,Medium,Apply rate limiting and monitor closely
+10.0.0.33,1,217.0,0.0,664.0,1,0.0384615384615384,0.10056957410460171,1,Normal,0.77,Traffic behavior within normal baseline,0.81,Low,Allow traffic and continue monitoring
+10.0.0.33,1,124.0,0.0,610.0,1,0.0384615384615384,0.11385520648485653,1,Normal,0.77,Traffic behavior within normal baseline,0.53,Low,Allow traffic and continue monitoring
+10.0.0.33,2,147.0,0.0,456.5,1,0.0769230769230769,0.053186899559414746,1,Normal,1.53,Traffic behavior within normal baseline,0.75,Low,Allow traffic and continue monitoring
+10.0.0.34,2,128.5,0.0,441.5,2,0.0769230769230769,0.07112685555169745,1,Normal,1.53,Traffic behavior within normal baseline,0.7,Low,Allow traffic and continue monitoring
+10.0.0.34,1,161.0,0.0,532.0,1,0.0384615384615384,0.12245851337866603,1,Normal,0.77,Traffic behavior within normal baseline,0.64,Low,Allow traffic and continue monitoring
+10.0.0.34,1,183.0,0.0,253.0,1,0.0384615384615384,0.1042921337066261,1,Normal,0.77,Traffic behavior within normal baseline,0.71,Low,Allow traffic and continue monitoring
+10.0.0.34,1,200.0,0.0,587.0,1,0.0384615384615384,0.11439621036640663,1,Normal,0.77,Traffic behavior within normal baseline,0.76,Low,Allow traffic and continue monitoring
+10.0.0.34,1,97.0,0.0,579.0,1,0.0384615384615384,0.08622746229032036,1,Normal,0.77,Traffic behavior within normal baseline,0.45,Low,Allow traffic and continue monitoring
+10.0.0.34,1,91.0,0.0,229.0,1,0.0384615384615384,0.05157960523384986,1,Normal,0.77,Traffic behavior within normal baseline,0.43,Low,Allow traffic and continue monitoring
+10.0.0.34,1,196.0,0.0,595.0,1,0.0384615384615384,0.11787410343339833,1,Normal,0.77,Traffic behavior within normal baseline,0.75,Low,Allow traffic and continue monitoring
+10.0.0.34,1,193.0,0.0,284.0,1,0.0384615384615384,0.10876059622433892,1,Normal,0.77,Traffic behavior within normal baseline,0.74,Low,Allow traffic and continue monitoring
+10.0.0.34,2,130.0,0.5,432.5,2,0.0769230769230769,0.07387034909142065,1,Normal,1.53,Traffic behavior within normal baseline,2.7,Low,Allow traffic and continue monitoring
+10.0.0.34,1,106.0,0.0,474.0,1,0.0384615384615384,0.09936618814597264,1,Normal,0.77,Traffic behavior within normal baseline,0.48,Low,Allow traffic and continue monitoring
+10.0.0.34,1,96.0,0.0,705.0,1,0.0384615384615384,0.06850563826486067,1,Normal,0.77,Traffic behavior within normal baseline,0.45,Low,Allow traffic and continue monitoring
+10.0.0.35,1,242.0,0.0,747.0,1,0.0384615384615384,0.05403647703176401,1,Normal,0.77,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.35,2,201.5,0.0,482.0,2,0.0769230769230769,0.082115689335025,1,Normal,1.53,Traffic behavior within normal baseline,0.92,Low,Allow traffic and continue monitoring
+10.0.0.35,1,107.0,0.0,620.0,1,0.0384615384615384,0.10372760089476463,1,Normal,0.77,Traffic behavior within normal baseline,0.48,Low,Allow traffic and continue monitoring
+10.0.0.35,4,130.75,0.75,533.5,3,0.1538461538461538,-0.12910216671222763,-1,Anomaly,3.07,Request rate exceeded baseline by 3.07×; Unusually high error rate observed; Accessing unusually high number of endpoints,4.01,Medium,Apply rate limiting and monitor closely
+10.0.0.35,1,222.0,1.0,592.0,1,0.0384615384615384,0.06890028913669505,1,Normal,0.77,Traffic behavior within normal baseline,4.83,Medium,Apply rate limiting and monitor closely
+10.0.0.35,1,218.0,1.0,258.0,1,0.0384615384615384,0.04508911180862668,1,Normal,0.77,Traffic behavior within normal baseline,4.82,Medium,Apply rate limiting and monitor closely
+10.0.0.35,2,116.5,0.5,586.0,2,0.0769230769230769,0.039550997283421874,1,Normal,1.53,Traffic behavior within normal baseline,2.66,Low,Allow traffic and continue monitoring
+10.0.0.35,2,113.5,0.0,576.5,1,0.0769230769230769,0.025683728428943453,1,Normal,1.53,Traffic behavior within normal baseline,0.65,Low,Allow traffic and continue monitoring
+10.0.0.35,2,120.5,0.5,380.5,2,0.0769230769230769,0.04234357031210395,1,Normal,1.53,Traffic behavior within normal baseline,2.67,Low,Allow traffic and continue monitoring
+10.0.0.35,1,149.0,0.0,652.0,1,0.0384615384615384,0.11315193683496011,1,Normal,0.77,Traffic behavior within normal baseline,0.61,Low,Allow traffic and continue monitoring
+10.0.0.35,1,156.0,0.0,313.0,1,0.0384615384615384,0.11580755953882238,1,Normal,0.77,Traffic behavior within normal baseline,0.63,Low,Allow traffic and continue monitoring
+10.0.0.35,1,174.0,0.0,550.0,1,0.0384615384615384,0.1202564938996325,1,Normal,0.77,Traffic behavior within normal baseline,0.68,Low,Allow traffic and continue monitoring
+10.0.0.36,1,150.0,1.0,332.0,1,0.0384615384615384,0.047900609989902476,1,Normal,0.77,Traffic behavior within normal baseline,4.61,Medium,Apply rate limiting and monitor closely
+10.0.0.36,1,129.0,1.0,332.0,1,0.0384615384615384,0.034775892134855824,1,Normal,0.77,Traffic behavior within normal baseline,4.55,Medium,Apply rate limiting and monitor closely
+10.0.0.36,1,104.0,0.0,269.0,1,0.0384615384615384,0.08810110575898089,1,Normal,0.77,Traffic behavior within normal baseline,0.47,Low,Allow traffic and continue monitoring
+10.0.0.36,1,156.0,0.0,681.0,1,0.0384615384615384,0.10212410548883316,1,Normal,0.77,Traffic behavior within normal baseline,0.63,Low,Allow traffic and continue monitoring
+10.0.0.36,1,107.0,0.0,752.0,1,0.0384615384615384,0.07459649498413229,1,Normal,0.77,Traffic behavior within normal baseline,0.48,Low,Allow traffic and continue monitoring
+10.0.0.36,1,168.0,0.0,218.0,1,0.0384615384615384,0.07918925265557464,1,Normal,0.77,Traffic behavior within normal baseline,0.66,Low,Allow traffic and continue monitoring
+10.0.0.36,1,114.0,0.0,356.0,1,0.0384615384615384,0.10368901401046149,1,Normal,0.77,Traffic behavior within normal baseline,0.5,Low,Allow traffic and continue monitoring
+10.0.0.36,1,99.0,0.0,233.0,1,0.0384615384615384,0.07049380008978279,1,Normal,0.77,Traffic behavior within normal baseline,0.45,Low,Allow traffic and continue monitoring
+10.0.0.36,3,131.0,0.0,546.3333333333334,3,0.1153846153846153,-0.044194020759117714,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,0.86,Low,Allow traffic and continue monitoring
+10.0.0.37,1,87.0,1.0,400.0,1,0.0384615384615384,0.017986546253207503,1,Normal,0.77,Traffic behavior within normal baseline,4.42,Medium,Apply rate limiting and monitor closely
+10.0.0.37,1,145.0,0.0,635.0,1,0.0384615384615384,0.11021808130884331,1,Normal,0.77,Traffic behavior within normal baseline,0.59,Low,Allow traffic and continue monitoring
+10.0.0.37,1,87.0,1.0,642.0,1,0.0384615384615384,0.026122963543355526,1,Normal,0.77,Traffic behavior within normal baseline,4.42,Medium,Apply rate limiting and monitor closely
+10.0.0.37,1,136.0,1.0,666.0,1,0.0384615384615384,0.04893359203779013,1,Normal,0.77,Traffic behavior within normal baseline,4.57,Medium,Apply rate limiting and monitor closely
+10.0.0.37,1,224.0,0.0,676.0,1,0.0384615384615384,0.09421456246200272,1,Normal,0.77,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.37,1,115.0,0.0,768.0,1,0.0384615384615384,0.07938492682806703,1,Normal,0.77,Traffic behavior within normal baseline,0.5,Low,Allow traffic and continue monitoring
+10.0.0.37,3,181.66666666666663,0.3333333333333333,648.0,2,0.1153846153846153,-0.01299389076085311,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,2.35,Low,Allow traffic and continue monitoring
+10.0.0.38,3,128.0,0.6666666666666666,596.6666666666666,3,0.1153846153846153,-0.06392521424224051,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Unusually high error rate observed; Accessing unusually high number of endpoints,3.52,Low,Allow traffic and continue monitoring
+10.0.0.38,1,150.0,0.0,265.0,1,0.0384615384615384,0.09745667976888839,1,Normal,0.77,Traffic behavior within normal baseline,0.61,Low,Allow traffic and continue monitoring
+10.0.0.38,1,202.0,0.0,352.0,1,0.0384615384615384,0.11894175108697297,1,Normal,0.77,Traffic behavior within normal baseline,0.77,Low,Allow traffic and continue monitoring
+10.0.0.38,2,173.5,0.0,405.5,2,0.0769230769230769,0.09313755272641411,1,Normal,1.53,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.38,1,194.0,0.0,777.0,1,0.0384615384615384,0.0786303154537406,1,Normal,0.77,Traffic behavior within normal baseline,0.74,Low,Allow traffic and continue monitoring
+10.0.0.38,2,210.5,0.0,467.0,2,0.0769230769230769,0.0638277724745197,1,Normal,1.53,Traffic behavior within normal baseline,0.95,Low,Allow traffic and continue monitoring
+10.0.0.38,1,174.0,0.0,384.0,1,0.0384615384615384,0.11645954026894706,1,Normal,0.77,Traffic behavior within normal baseline,0.68,Low,Allow traffic and continue monitoring
+10.0.0.38,2,157.0,0.0,424.5,2,0.0769230769230769,0.0979465253648239,1,Normal,1.53,Traffic behavior within normal baseline,0.78,Low,Allow traffic and continue monitoring
+10.0.0.38,1,183.0,1.0,598.0,1,0.0384615384615384,0.07592889892658072,1,Normal,0.77,Traffic behavior within normal baseline,4.71,Medium,Apply rate limiting and monitor closely
+10.0.0.38,1,132.0,0.0,606.0,1,0.0384615384615384,0.11479437287837674,1,Normal,0.77,Traffic behavior within normal baseline,0.55,Low,Allow traffic and continue monitoring
+10.0.0.39,2,163.0,0.0,591.0,2,0.0769230769230769,0.08908686545044026,1,Normal,1.53,Traffic behavior within normal baseline,0.8,Low,Allow traffic and continue monitoring
+10.0.0.39,1,174.0,1.0,793.0,1,0.0384615384615384,0.03697642364066628,1,Normal,0.77,Traffic behavior within normal baseline,4.68,Medium,Apply rate limiting and monitor closely
+10.0.0.39,3,147.0,0.0,574.3333333333334,2,0.1153846153846153,-0.0027676341521566394,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,0.91,Low,Allow traffic and continue monitoring
+10.0.0.39,1,182.0,0.0,514.0,1,0.0384615384615384,0.11927422865561421,1,Normal,0.77,Traffic behavior within normal baseline,0.71,Low,Allow traffic and continue monitoring
+10.0.0.39,2,169.0,0.0,381.5,2,0.0769230769230769,0.08360651431947763,1,Normal,1.53,Traffic behavior within normal baseline,0.82,Low,Allow traffic and continue monitoring
+10.0.0.4,1,239.0,0.0,370.0,1,0.0384615384615384,0.0950470610504397,1,Normal,0.77,Traffic behavior within normal baseline,0.88,Low,Allow traffic and continue monitoring
+10.0.0.4,2,184.0,0.5,302.5,1,0.0769230769230769,-0.002721421173259575,-1,Anomaly,1.53,Unusually high error rate observed,2.87,Low,Allow traffic and continue monitoring
+10.0.0.4,2,180.0,0.0,684.0,2,0.0769230769230769,0.049284616784062485,1,Normal,1.53,Traffic behavior within normal baseline,0.85,Low,Allow traffic and continue monitoring
+10.0.0.4,1,236.0,1.0,457.0,1,0.0384615384615384,0.04757357726805811,1,Normal,0.77,Traffic behavior within normal baseline,4.87,Medium,Apply rate limiting and monitor closely
+10.0.0.4,2,206.0,0.5,536.5,2,0.0769230769230769,0.05971868626755639,1,Normal,1.53,Traffic behavior within normal baseline,2.93,Low,Allow traffic and continue monitoring
+10.0.0.4,2,214.0,0.5,440.5,2,0.0769230769230769,0.05519393010803503,1,Normal,1.53,Traffic behavior within normal baseline,2.96,Low,Allow traffic and continue monitoring
+10.0.0.4,2,203.0,0.0,598.5,1,0.0769230769230769,0.049003504826568955,1,Normal,1.53,Traffic behavior within normal baseline,0.92,Low,Allow traffic and continue monitoring
+10.0.0.40,1,147.0,0.0,703.0,1,0.0384615384615384,0.10117335304435521,1,Normal,0.77,Traffic behavior within normal baseline,0.6,Low,Allow traffic and continue monitoring
+10.0.0.40,1,227.0,1.0,610.0,1,0.0384615384615384,0.06789135757040188,1,Normal,0.77,Traffic behavior within normal baseline,4.84,Medium,Apply rate limiting and monitor closely
+10.0.0.40,1,234.0,1.0,382.0,1,0.0384615384615384,0.04699968503567331,1,Normal,0.77,Traffic behavior within normal baseline,4.86,Medium,Apply rate limiting and monitor closely
+10.0.0.40,1,120.0,0.0,615.0,1,0.0384615384615384,0.10891522933083042,1,Normal,0.77,Traffic behavior within normal baseline,0.52,Low,Allow traffic and continue monitoring
+10.0.0.40,3,192.0,0.6666666666666666,567.3333333333334,2,0.1153846153846153,-0.021881707482608093,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Unusually high error rate observed; Accessing unusually high number of endpoints,3.71,Low,Allow traffic and continue monitoring
+10.0.0.41,2,159.0,0.0,322.0,2,0.0769230769230769,0.06374735548376903,1,Normal,1.53,Traffic behavior within normal baseline,0.79,Low,Allow traffic and continue monitoring
+10.0.0.41,3,172.66666666666666,0.6666666666666666,584.3333333333334,3,0.1153846153846153,-0.041214824778949444,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Unusually high error rate observed; Accessing unusually high number of endpoints,3.65,Low,Allow traffic and continue monitoring
+10.0.0.41,1,204.0,1.0,666.0,1,0.0384615384615384,0.07516649746590298,1,Normal,0.77,Traffic behavior within normal baseline,4.77,Medium,Apply rate limiting and monitor closely
+10.0.0.41,1,178.0,1.0,521.0,1,0.0384615384615384,0.08029711553574076,1,Normal,0.77,Traffic behavior within normal baseline,4.69,Medium,Apply rate limiting and monitor closely
+10.0.0.41,1,119.0,1.0,782.0,1,0.0384615384615384,0.01631526686052376,1,Normal,0.77,Traffic behavior within normal baseline,4.52,Medium,Apply rate limiting and monitor closely
+10.0.0.41,1,243.0,1.0,304.0,1,0.0384615384615384,0.027720715648504646,1,Normal,0.77,Traffic behavior within normal baseline,4.89,Medium,Apply rate limiting and monitor closely
+10.0.0.41,1,168.0,1.0,307.0,1,0.0384615384615384,0.060706785384241624,1,Normal,0.77,Traffic behavior within normal baseline,4.66,Medium,Apply rate limiting and monitor closely
+10.0.0.41,1,132.0,0.0,712.0,1,0.0384615384615384,0.09965556989702734,1,Normal,0.77,Traffic behavior within normal baseline,0.55,Low,Allow traffic and continue monitoring
+10.0.0.41,1,247.0,1.0,782.0,1,0.0384615384615384,0.03245256874702607,1,Normal,0.77,Traffic behavior within normal baseline,4.9,Medium,Apply rate limiting and monitor closely
+10.0.0.42,1,210.0,1.0,556.0,1,0.0384615384615384,0.0797342459704723,1,Normal,0.77,Traffic behavior within normal baseline,4.79,Medium,Apply rate limiting and monitor closely
+10.0.0.42,1,161.0,0.0,709.0,1,0.0384615384615384,0.09811911876434298,1,Normal,0.77,Traffic behavior within normal baseline,0.64,Low,Allow traffic and continue monitoring
+10.0.0.42,1,170.0,0.0,708.0,1,0.0384615384615384,0.09492057466206866,1,Normal,0.77,Traffic behavior within normal baseline,0.67,Low,Allow traffic and continue monitoring
+10.0.0.42,1,194.0,0.0,647.0,1,0.0384615384615384,0.10966297228860516,1,Normal,0.77,Traffic behavior within normal baseline,0.74,Low,Allow traffic and continue monitoring
+10.0.0.42,1,152.0,1.0,399.0,1,0.0384615384615384,0.06369174123645627,1,Normal,0.77,Traffic behavior within normal baseline,4.62,Medium,Apply rate limiting and monitor closely
+10.0.0.42,1,103.0,0.0,254.0,1,0.0384615384615384,0.08386464609961158,1,Normal,0.77,Traffic behavior within normal baseline,0.47,Low,Allow traffic and continue monitoring
+10.0.0.42,1,94.0,0.0,377.0,1,0.0384615384615384,0.07581845832818834,1,Normal,0.77,Traffic behavior within normal baseline,0.44,Low,Allow traffic and continue monitoring
+10.0.0.43,2,89.5,0.5,332.0,2,0.0769230769230769,-0.020479373521768984,-1,Anomaly,1.53,Unusually high error rate observed; Accessing unusually high number of endpoints,2.58,Low,Allow traffic and continue monitoring
+10.0.0.43,3,159.0,0.3333333333333333,491.3333333333333,2,0.1153846153846153,0.009857471745133739,1,Normal,2.3,Traffic behavior within normal baseline,2.28,Low,Allow traffic and continue monitoring
+10.0.0.43,1,197.0,1.0,275.0,1,0.0384615384615384,0.051312965099666374,1,Normal,0.77,Traffic behavior within normal baseline,4.75,Medium,Apply rate limiting and monitor closely
+10.0.0.43,2,183.0,0.0,421.0,2,0.0769230769230769,0.0935841611321146,1,Normal,1.53,Traffic behavior within normal baseline,0.86,Low,Allow traffic and continue monitoring
+10.0.0.43,3,163.0,0.0,408.6666666666667,2,0.1153846153846153,0.016078650941702577,1,Normal,2.3,Traffic behavior within normal baseline,0.96,Low,Allow traffic and continue monitoring
+10.0.0.43,1,185.0,1.0,256.0,1,0.0384615384615384,0.055645612342931916,1,Normal,0.77,Traffic behavior within normal baseline,4.72,Medium,Apply rate limiting and monitor closely
+10.0.0.43,1,222.0,0.0,246.0,1,0.0384615384615384,0.0896352011877889,1,Normal,0.77,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.43,2,190.5,0.5,360.0,2,0.0769230769230769,0.05369732373418579,1,Normal,1.53,Traffic behavior within normal baseline,2.89,Low,Allow traffic and continue monitoring
+10.0.0.43,3,177.66666666666666,0.0,609.3333333333334,3,0.1153846153846153,-0.031663325447417345,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,1.0,Low,Allow traffic and continue monitoring
+10.0.0.44,1,239.0,1.0,528.0,1,0.0384615384615384,0.05325306897327331,1,Normal,0.77,Traffic behavior within normal baseline,4.88,Medium,Apply rate limiting and monitor closely
+10.0.0.44,2,139.5,0.5,549.0,2,0.0769230769230769,0.07005885877906165,1,Normal,1.53,Traffic behavior within normal baseline,2.73,Low,Allow traffic and continue monitoring
+10.0.0.44,1,223.0,0.0,298.0,1,0.0384615384615384,0.1056769478288806,1,Normal,0.77,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.44,1,111.0,0.0,548.0,1,0.0384615384615384,0.11443789755786177,1,Normal,0.77,Traffic behavior within normal baseline,0.49,Low,Allow traffic and continue monitoring
+10.0.0.44,2,142.0,0.0,527.5,1,0.0769230769230769,0.055227427372673166,1,Normal,1.53,Traffic behavior within normal baseline,0.74,Low,Allow traffic and continue monitoring
+10.0.0.44,2,184.0,0.5,328.0,1,0.0769230769230769,0.0004384660483215397,1,Normal,1.53,Traffic behavior within normal baseline,2.87,Low,Allow traffic and continue monitoring
+10.0.0.44,2,190.0,0.0,393.0,2,0.0769230769230769,0.07680685480924887,1,Normal,1.53,Traffic behavior within normal baseline,0.88,Low,Allow traffic and continue monitoring
+10.0.0.44,2,200.0,0.0,746.5,1,0.0769230769230769,-0.016984831055882776,-1,Anomaly,1.53,Abnormally large request payloads,0.91,Low,Allow traffic and continue monitoring
+10.0.0.44,1,121.0,0.0,230.0,1,0.0384615384615384,0.08121054390033172,1,Normal,0.77,Traffic behavior within normal baseline,0.52,Low,Allow traffic and continue monitoring
+10.0.0.45,2,143.0,0.5,428.5,2,0.0769230769230769,0.07824168562683526,1,Normal,1.53,Traffic behavior within normal baseline,2.74,Low,Allow traffic and continue monitoring
+10.0.0.45,1,243.0,0.0,384.0,1,0.0384615384615384,0.08497741195166275,1,Normal,0.77,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.45,2,172.5,0.0,473.5,1,0.0769230769230769,0.05845461535103125,1,Normal,1.53,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.45,1,164.0,1.0,224.0,1,0.0384615384615384,0.03300140341386987,1,Normal,0.77,Traffic behavior within normal baseline,4.65,Medium,Apply rate limiting and monitor closely
+10.0.0.45,1,104.0,0.0,552.0,1,0.0384615384615384,0.10436204960474726,1,Normal,0.77,Traffic behavior within normal baseline,0.47,Low,Allow traffic and continue monitoring
+10.0.0.45,1,218.0,0.0,266.0,1,0.0384615384615384,0.09998158663372775,1,Normal,0.77,Traffic behavior within normal baseline,0.82,Low,Allow traffic and continue monitoring
+10.0.0.45,1,201.0,1.0,662.0,1,0.0384615384615384,0.07404347673608513,1,Normal,0.77,Traffic behavior within normal baseline,4.76,Medium,Apply rate limiting and monitor closely
+10.0.0.45,1,245.0,1.0,741.0,1,0.0384615384615384,0.04615984235292486,1,Normal,0.77,Traffic behavior within normal baseline,4.9,Medium,Apply rate limiting and monitor closely
+10.0.0.46,3,178.0,0.3333333333333333,339.3333333333333,3,0.1153846153846153,-0.04900263456247311,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,2.34,Low,Allow traffic and continue monitoring
+10.0.0.46,1,167.0,0.0,596.0,1,0.0384615384615384,0.117572196833717,1,Normal,0.77,Traffic behavior within normal baseline,0.66,Low,Allow traffic and continue monitoring
+10.0.0.46,1,224.0,1.0,551.0,1,0.0384615384615384,0.06927988204412988,1,Normal,0.77,Traffic behavior within normal baseline,4.83,Medium,Apply rate limiting and monitor closely
+10.0.0.46,1,250.0,0.0,779.0,1,0.0384615384615384,0.03491174320015927,1,Normal,0.77,Traffic behavior within normal baseline,0.91,Low,Allow traffic and continue monitoring
+10.0.0.46,1,143.0,0.0,793.0,1,0.0384615384615384,0.06260838188227563,1,Normal,0.77,Traffic behavior within normal baseline,0.59,Low,Allow traffic and continue monitoring
+10.0.0.46,2,117.0,0.0,487.5,1,0.0769230769230769,0.03704662811109671,1,Normal,1.53,Traffic behavior within normal baseline,0.66,Low,Allow traffic and continue monitoring
+10.0.0.46,1,204.0,0.0,625.0,1,0.0384615384615384,0.10947140590192639,1,Normal,0.77,Traffic behavior within normal baseline,0.77,Low,Allow traffic and continue monitoring
+10.0.0.46,1,119.0,0.0,627.0,1,0.0384615384615384,0.10954352608531931,1,Normal,0.77,Traffic behavior within normal baseline,0.52,Low,Allow traffic and continue monitoring
+10.0.0.46,2,228.0,0.5,476.5,2,0.0769230769230769,0.02687551235457525,1,Normal,1.53,Traffic behavior within normal baseline,3.0,Low,Allow traffic and continue monitoring
+10.0.0.47,1,154.0,0.0,364.0,1,0.0384615384615384,0.1166018827141353,1,Normal,0.77,Traffic behavior within normal baseline,0.62,Low,Allow traffic and continue monitoring
+10.0.0.47,1,189.0,1.0,562.0,1,0.0384615384615384,0.07306515988758933,1,Normal,0.77,Traffic behavior within normal baseline,4.73,Medium,Apply rate limiting and monitor closely
+10.0.0.47,1,180.0,1.0,621.0,1,0.0384615384615384,0.07722718749188079,1,Normal,0.77,Traffic behavior within normal baseline,4.7,Medium,Apply rate limiting and monitor closely
+10.0.0.47,3,179.33333333333334,0.3333333333333333,338.0,1,0.1153846153846153,-0.06117180952191148,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×,2.34,Low,Allow traffic and continue monitoring
+10.0.0.47,1,171.0,0.0,421.0,1,0.0384615384615384,0.1109693163456823,1,Normal,0.77,Traffic behavior within normal baseline,0.67,Low,Allow traffic and continue monitoring
+10.0.0.47,2,175.0,0.0,632.0,2,0.0769230769230769,0.08404455541003442,1,Normal,1.53,Traffic behavior within normal baseline,0.84,Low,Allow traffic and continue monitoring
+10.0.0.47,1,106.0,0.0,568.0,1,0.0384615384615384,0.10590141026566208,1,Normal,0.77,Traffic behavior within normal baseline,0.48,Low,Allow traffic and continue monitoring
+10.0.0.47,1,109.0,0.0,201.0,1,0.0384615384615384,0.06055020663082594,1,Normal,0.77,Traffic behavior within normal baseline,0.48,Low,Allow traffic and continue monitoring
+10.0.0.47,1,107.0,0.0,201.0,1,0.0384615384615384,0.05633893172961879,1,Normal,0.77,Traffic behavior within normal baseline,0.48,Low,Allow traffic and continue monitoring
+10.0.0.47,1,231.0,0.0,315.0,1,0.0384615384615384,0.1008212392308932,1,Normal,0.77,Traffic behavior within normal baseline,0.85,Low,Allow traffic and continue monitoring
+10.0.0.47,1,118.0,1.0,625.0,1,0.0384615384615384,0.04396183493346939,1,Normal,0.77,Traffic behavior within normal baseline,4.51,Medium,Apply rate limiting and monitor closely
+10.0.0.48,2,161.5,0.0,659.0,2,0.0769230769230769,0.07005486973370978,1,Normal,1.53,Traffic behavior within normal baseline,0.8,Low,Allow traffic and continue monitoring
+10.0.0.48,2,245.0,0.0,657.5,1,0.0769230769230769,-0.0165770067104154,-1,Anomaly,1.53,Multiple feature deviations from learned baseline,1.05,Low,Allow traffic and continue monitoring
+10.0.0.48,1,199.0,0.0,231.0,1,0.0384615384615384,0.09408355666823132,1,Normal,0.77,Traffic behavior within normal baseline,0.76,Low,Allow traffic and continue monitoring
+10.0.0.48,1,100.0,0.0,314.0,1,0.0384615384615384,0.08639558932503333,1,Normal,0.77,Traffic behavior within normal baseline,0.46,Low,Allow traffic and continue monitoring
+10.0.0.48,1,103.0,0.0,514.0,1,0.0384615384615384,0.09851744463184597,1,Normal,0.77,Traffic behavior within normal baseline,0.47,Low,Allow traffic and continue monitoring
+10.0.0.48,1,82.0,0.0,408.0,1,0.0384615384615384,0.05206885132907085,1,Normal,0.77,Traffic behavior within normal baseline,0.4,Low,Allow traffic and continue monitoring
+10.0.0.48,1,204.0,0.0,242.0,1,0.0384615384615384,0.09345832652927627,1,Normal,0.77,Traffic behavior within normal baseline,0.77,Low,Allow traffic and continue monitoring
+10.0.0.49,2,209.0,0.0,581.0,2,0.0769230769230769,0.05944847936661796,1,Normal,1.53,Traffic behavior within normal baseline,0.94,Low,Allow traffic and continue monitoring
+10.0.0.49,1,88.0,1.0,772.0,1,0.0384615384615384,-0.000657699072482365,-1,Anomaly,0.77,Unusually high error rate observed; Abnormally large request payloads,4.42,Medium,Apply rate limiting and monitor closely
+10.0.0.49,1,237.0,0.0,255.0,1,0.0384615384615384,0.0799687381960556,1,Normal,0.77,Traffic behavior within normal baseline,0.87,Low,Allow traffic and continue monitoring
+10.0.0.49,2,163.0,0.0,664.0,1,0.0769230769230769,0.03341402124380638,1,Normal,1.53,Traffic behavior within normal baseline,0.8,Low,Allow traffic and continue monitoring
+10.0.0.49,1,228.0,1.0,307.0,1,0.0384615384615384,0.045005498348842154,1,Normal,0.77,Traffic behavior within normal baseline,4.85,Medium,Apply rate limiting and monitor closely
+10.0.0.49,1,162.0,0.0,479.0,1,0.0384615384615384,0.12058631418546706,1,Normal,0.77,Traffic behavior within normal baseline,0.65,Low,Allow traffic and continue monitoring
+10.0.0.49,1,166.0,1.0,241.0,1,0.0384615384615384,0.04319900719691899,1,Normal,0.77,Traffic behavior within normal baseline,4.66,Medium,Apply rate limiting and monitor closely
+10.0.0.49,1,152.0,0.0,332.0,1,0.0384615384615384,0.11487488871856044,1,Normal,0.77,Traffic behavior within normal baseline,0.62,Low,Allow traffic and continue monitoring
+10.0.0.5,1,241.0,0.0,687.0,1,0.0384615384615384,0.06473884474159147,1,Normal,0.77,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.5,1,237.0,0.0,233.0,1,0.0384615384615384,0.06827441499824694,1,Normal,0.77,Traffic behavior within normal baseline,0.87,Low,Allow traffic and continue monitoring
+10.0.0.5,1,200.0,0.0,353.0,1,0.0384615384615384,0.12101822943678692,1,Normal,0.77,Traffic behavior within normal baseline,0.76,Low,Allow traffic and continue monitoring
+10.0.0.5,1,119.0,0.0,456.0,1,0.0384615384615384,0.10237599629393002,1,Normal,0.77,Traffic behavior within normal baseline,0.52,Low,Allow traffic and continue monitoring
+10.0.0.5,2,201.5,0.0,574.0,2,0.0769230769230769,0.07072626902675472,1,Normal,1.53,Traffic behavior within normal baseline,0.92,Low,Allow traffic and continue monitoring
+10.0.0.6,3,188.66666666666663,0.3333333333333333,602.0,3,0.1153846153846153,-0.022210940426836245,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Accessing unusually high number of endpoints,2.37,Low,Allow traffic and continue monitoring
+10.0.0.6,2,227.0,0.0,504.5,2,0.0769230769230769,0.038246054696736254,1,Normal,1.53,Traffic behavior within normal baseline,1.0,Low,Allow traffic and continue monitoring
+10.0.0.6,1,94.0,0.0,558.0,1,0.0384615384615384,0.08816462068389724,1,Normal,0.77,Traffic behavior within normal baseline,0.44,Low,Allow traffic and continue monitoring
+10.0.0.6,1,85.0,0.0,741.0,1,0.0384615384615384,0.043772376161462845,1,Normal,0.77,Traffic behavior within normal baseline,0.41,Low,Allow traffic and continue monitoring
+10.0.0.6,1,241.0,0.0,558.0,1,0.0384615384615384,0.09460197261584968,1,Normal,0.77,Traffic behavior within normal baseline,0.89,Low,Allow traffic and continue monitoring
+10.0.0.6,2,117.5,0.0,610.5,2,0.0769230769230769,0.0500112472794636,1,Normal,1.53,Traffic behavior within normal baseline,0.66,Low,Allow traffic and continue monitoring
+10.0.0.6,1,218.0,0.0,440.0,1,0.0384615384615384,0.10384096739608994,1,Normal,0.77,Traffic behavior within normal baseline,0.82,Low,Allow traffic and continue monitoring
+10.0.0.6,1,250.0,0.0,575.0,1,0.0384615384615384,0.08169684944291872,1,Normal,0.77,Traffic behavior within normal baseline,0.91,Low,Allow traffic and continue monitoring
+10.0.0.6,1,216.0,1.0,452.0,1,0.0384615384615384,0.062414167116255026,1,Normal,0.77,Traffic behavior within normal baseline,4.81,Medium,Apply rate limiting and monitor closely
+10.0.0.7,1,155.0,0.0,598.0,1,0.0384615384615384,0.11943876186276248,1,Normal,0.77,Traffic behavior within normal baseline,0.62,Low,Allow traffic and continue monitoring
+10.0.0.7,2,210.5,0.0,343.0,1,0.0769230769230769,0.022077957027603623,1,Normal,1.53,Traffic behavior within normal baseline,0.95,Low,Allow traffic and continue monitoring
+10.0.0.7,1,149.0,1.0,210.0,1,0.0384615384615384,0.01250236700348406,1,Normal,0.77,Traffic behavior within normal baseline,4.61,Medium,Apply rate limiting and monitor closely
+10.0.0.7,1,90.0,0.0,215.0,1,0.0384615384615384,0.03542321536891441,1,Normal,0.77,Traffic behavior within normal baseline,0.43,Low,Allow traffic and continue monitoring
+10.0.0.7,1,189.0,0.0,487.0,1,0.0384615384615384,0.12017517039587022,1,Normal,0.77,Traffic behavior within normal baseline,0.73,Low,Allow traffic and continue monitoring
+10.0.0.7,2,206.5,0.5,245.0,2,0.0769230769230769,0.0046249728896013975,1,Normal,1.53,Traffic behavior within normal baseline,2.93,Low,Allow traffic and continue monitoring
+10.0.0.7,1,203.0,0.0,308.0,1,0.0384615384615384,0.1139618889536288,1,Normal,0.77,Traffic behavior within normal baseline,0.77,Low,Allow traffic and continue monitoring
+10.0.0.7,1,149.0,1.0,764.0,1,0.0384615384615384,0.03596556089420555,1,Normal,0.77,Traffic behavior within normal baseline,4.61,Medium,Apply rate limiting and monitor closely
+10.0.0.7,1,204.0,1.0,325.0,1,0.0384615384615384,0.05331217898412455,1,Normal,0.77,Traffic behavior within normal baseline,4.77,Medium,Apply rate limiting and monitor closely
+10.0.0.8,3,192.0,0.6666666666666666,408.6666666666667,2,0.1153846153846153,-0.030691712708553087,-1,Anomaly,2.3,Request rate exceeded baseline by 2.3×; Unusually high error rate observed; Accessing unusually high number of endpoints,3.71,Low,Allow traffic and continue monitoring
+10.0.0.8,2,142.0,0.5,514.0,2,0.0769230769230769,0.07661761610532158,1,Normal,1.53,Traffic behavior within normal baseline,2.74,Low,Allow traffic and continue monitoring
+10.0.0.8,1,124.0,0.0,727.0,1,0.0384615384615384,0.09160894379210066,1,Normal,0.77,Traffic behavior within normal baseline,0.53,Low,Allow traffic and continue monitoring
+10.0.0.8,1,127.0,0.0,793.0,1,0.0384615384615384,0.06104093831129209,1,Normal,0.77,Traffic behavior within normal baseline,0.54,Low,Allow traffic and continue monitoring
+10.0.0.8,2,111.0,0.0,397.5,1,0.0769230769230769,0.01948307157488205,1,Normal,1.53,Traffic behavior within normal baseline,0.64,Low,Allow traffic and continue monitoring
+10.0.0.8,1,120.0,1.0,684.0,1,0.0384615384615384,0.03585408566324749,1,Normal,0.77,Traffic behavior within normal baseline,4.52,Medium,Apply rate limiting and monitor closely
+10.0.0.8,1,123.0,0.0,220.0,1,0.0384615384615384,0.07457298816760877,1,Normal,0.77,Traffic behavior within normal baseline,0.53,Low,Allow traffic and continue monitoring
+10.0.0.8,1,115.0,0.0,228.0,1,0.0384615384615384,0.08293336490403813,1,Normal,0.77,Traffic behavior within normal baseline,0.5,Low,Allow traffic and continue monitoring
+10.0.0.8,1,230.0,0.0,238.0,1,0.0384615384615384,0.07946970018689681,1,Normal,0.77,Traffic behavior within normal baseline,0.85,Low,Allow traffic and continue monitoring
+10.0.0.9,1,223.0,0.0,534.0,1,0.0384615384615384,0.10817038357674486,1,Normal,0.77,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.9,2,149.5,0.0,400.0,2,0.0769230769230769,0.08554788740076369,1,Normal,1.53,Traffic behavior within normal baseline,0.76,Low,Allow traffic and continue monitoring
+10.0.0.9,1,233.0,0.0,788.0,1,0.0384615384615384,0.04985545543293002,1,Normal,0.77,Traffic behavior within normal baseline,0.86,Low,Allow traffic and continue monitoring
+10.0.0.9,1,185.0,1.0,663.0,1,0.0384615384615384,0.07481036268158447,1,Normal,0.77,Traffic behavior within normal baseline,4.72,Medium,Apply rate limiting and monitor closely
+10.0.0.9,2,131.5,0.0,546.0,2,0.0769230769230769,0.07168809573048396,1,Normal,1.53,Traffic behavior within normal baseline,0.71,Low,Allow traffic and continue monitoring
+10.0.0.9,1,95.0,0.0,649.0,1,0.0384615384615384,0.08069191967040634,1,Normal,0.77,Traffic behavior within normal baseline,0.44,Low,Allow traffic and continue monitoring
+10.0.0.9,1,135.0,1.0,298.0,1,0.0384615384615384,0.03269165845511407,1,Normal,0.77,Traffic behavior within normal baseline,4.56,Medium,Apply rate limiting and monitor closely
+10.0.0.9,4,186.0,0.25,524.25,3,0.1538461538461538,-0.10883781218840494,-1,Anomaly,3.07,Request rate exceeded baseline by 3.07×; Accessing unusually high number of endpoints,2.18,Low,Allow traffic and continue monitoring
+10.0.0.9,1,224.0,0.0,440.0,1,0.0384615384615384,0.10027024959099762,1,Normal,0.77,Traffic behavior within normal baseline,0.83,Low,Allow traffic and continue monitoring
+10.0.0.9,2,160.0,0.0,396.5,1,0.0769230769230769,0.045062549679884156,1,Normal,1.53,Traffic behavior within normal baseline,0.79,Low,Allow traffic and continue monitoring
+10.0.0.9,2,200.0,0.5,536.5,2,0.0769230769230769,0.06771870297636778,1,Normal,1.53,Traffic behavior within normal baseline,2.91,Low,Allow traffic and continue monitoring
+10.0.0.9,2,136.5,0.0,553.0,2,0.0769230769230769,0.07564650440217446,1,Normal,1.53,Traffic behavior within normal baseline,0.72,Low,Allow traffic and continue monitoring
+10.0.0.99,21,518.4285714285714,1.0,1426.0,3,0.8076923076923077,-0.2334124590767389,-1,Anomaly,16.1,Request rate exceeded baseline by 16.1×; Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads; Accessing unusually high number of endpoints,8.8,High,Block IP and alert SOC immediately
+10.0.0.99,15,581.9333333333333,1.0,1500.6666666666667,3,0.5769230769230769,-0.2111717887462451,-1,Anomaly,11.5,Request rate exceeded baseline by 11.5×; Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads; Accessing unusually high number of endpoints,8.07,High,Block IP and alert SOC immediately
+10.0.0.99,11,512.6363636363636,1.0,1400.6363636363635,3,0.4230769230769231,-0.20571430677261449,-1,Anomaly,8.43,Request rate exceeded baseline by 8.43×; Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads; Accessing unusually high number of endpoints,7.25,High,Block IP and alert SOC immediately
+10.0.0.99,26,566.3076923076923,1.0,1419.6153846153843,3,1.0,-0.27288275298190856,-1,Anomaly,19.94,Request rate exceeded baseline by 19.94×; Unusually high error rate observed; Response time significantly higher than baseline; Abnormally large request payloads; Accessing unusually high number of endpoints,9.72,High,Block IP and alert SOC immediately
